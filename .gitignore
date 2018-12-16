@@ -1,0 +1,46 @@
+*.py[cod]
+.DS_Store
+build
+project.egg-info
+setup.py
+*.swp
+*.cache
+/generate/properties/*
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# This is usually scrapy cache folders
+.scrapy
+.vagrant
