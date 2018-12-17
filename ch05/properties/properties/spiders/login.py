@@ -44,15 +44,15 @@ class LoginSpider(CrawlSpider):
 
         # Load fields using XPath expressions
         l.add_xpath('title', '//*[@itemprop="name"][1]/text()',
-                    MapCompose(unicode.strip, unicode.title))
+                    MapCompose(str.strip, str.strip))
         l.add_xpath('price', './/*[@itemprop="price"][1]/text()',
                     MapCompose(lambda i: i.replace(',', ''), float),
                     re='[,.0-9]+')
         l.add_xpath('description', '//*[@itemprop="description"][1]/text()',
-                    MapCompose(unicode.strip), Join())
+                    MapCompose(str.strip), Join())
         l.add_xpath('address',
                     '//*[@itemtype="http://schema.org/Place"][1]/text()',
-                    MapCompose(unicode.strip))
+                    MapCompose(str.strip))
         l.add_xpath('image_urls', '//*[@itemprop="image"][1]/@src',
                     MapCompose(lambda i: urlparse.urljoin(response.url, i)))
 

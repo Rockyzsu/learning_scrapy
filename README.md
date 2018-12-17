@@ -1,6 +1,6 @@
-Learning Scrapy Book
+Learning Scrapy Book (python3 version)
 ==========
-精通python爬虫框架scrapy源码
+精通python爬虫框架scrapy源码 修改源码适配python3版本
 ==========
 
 This book covers the long awaited Scrapy v 1.0 that empowers you to extract useful data from virtually any source with very little effort. It starts off by explaining the fundamentals of Scrapy framework, followed by a thorough description of how to extract data from any source, clean it up, shape it as per your requirement using Python and 3rd party APIs. Next you will be familiarised with the process of storing the scrapped data in databases as well as search engines and performing real time analytics on them with Spark Streaming. By the end of this book, you will perfect the art of scraping data for your applications with ease.
